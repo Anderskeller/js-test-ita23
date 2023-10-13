@@ -1,10 +1,10 @@
-/**
- * This function returns an array of numbers from the specified start to finish counting up
- *
- * @param {number} start - The starting number of the range (inclusive).
- * @param {number} finish - The ending number of the range (inclusive).
- * @returns {Array<number>} - An array containing numbers from start to finish.
- *
+    /**
+     * This function returns an array of numbers from the specified start to finish counting up
+     *
+     * @param {number} start - The starting number of the range (inclusive).
+     * @param {number} finish - The ending number of the range (inclusive).
+     * @returns {Array<number>} - An array containing numbers from start to finish.
+     *
  * Usage:
  * const numbers = returnNumbers(2, 7);
  * console.log(numbers); // [2, 3, 4, 5, 6, 7]
@@ -13,10 +13,13 @@
  * const numbers = returnNumbers(5, 5);
  * console.log(numbers); // [5]
  */
-function returnNumbers(start, finish) {
-
-}
-
+    function returnNumbers(start, finish) {
+        const result = [];
+        for (let i = start; i <= finish; i++) {
+            result.push(i);
+        }
+        return result;
+    }
 
 /**
  * This function sums up all the values in an array.
@@ -30,7 +33,9 @@ function returnNumbers(start, finish) {
  */
 
 function sumArray(array) {
-
+    const sum = []
+    for (let i = 0; i < array.length ; i++) {
+    }
 }
 
 /**
@@ -45,5 +50,5 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-    
+    arr.push("elem");
 }
